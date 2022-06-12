@@ -14,6 +14,8 @@ export class MapComponent implements OnInit {
   
 
   private initMap(): void {
+
+    // When opening the map this will be the view point
     this.map = L.map('map').setView([40,-100],5)
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

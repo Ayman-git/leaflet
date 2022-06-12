@@ -9,6 +9,8 @@ export class MarkerService {
   baseUrl: string = 'http://localhost:3000/PLNT20'
   constructor(private http: HttpClient) {}
 
+
+  // Function to create markers
   makesMarkers(map: L.Map): void {
     this.http.get(this.baseUrl).subscribe((res : any) => {
 
