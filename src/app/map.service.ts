@@ -6,7 +6,10 @@ import * as L from 'leaflet';
   providedIn: 'root',
 })
 export class MarkerService {
+
+  // Json file
   baseUrl: string = 'http://localhost:3000/PLNT20'
+  
   constructor(private http: HttpClient) {}
 
 
