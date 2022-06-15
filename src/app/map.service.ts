@@ -19,8 +19,8 @@ export class MarkerService {
 
       
       for(const c of res){
-        const lat = c.latitude;
-        const long = c.longtitude;
+        const lat = c.Latitude;
+        const long = c.Longitude;
        
         const marker = L.marker([lat,long]).addTo(map);
         /*marker.bindPopup( `<center>
